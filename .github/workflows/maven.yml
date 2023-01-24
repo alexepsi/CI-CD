@@ -27,8 +27,6 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml -DskipTests
-    - name: Generate HTML
-      run: sh make_html.sh
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:
